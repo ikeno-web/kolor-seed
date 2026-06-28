@@ -33,3 +33,8 @@ bin/
 
 # Coverage
 kover/
+
+# Internal workflow artifacts
+_meta/
+_design/
+_review/
