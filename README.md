@@ -36,10 +36,10 @@ Then add the dependency:
 // build.gradle.kts
 dependencies {
     // Core: HCT, palettes, schemes (no UI dependency)
-    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-core:v0.1.0")
+    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-core:v0.1.1")
 
     // Optional: Compose Color extensions
-    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-compose:v0.1.0")
+    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-compose:v0.1.1")
 }
 ```
 
