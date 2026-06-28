@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    `maven-publish`
 }
+
+group = "com.github.ikeno-web.kolor-seed"
+version = "0.1.0"
 
 kotlin {
     explicitApi()

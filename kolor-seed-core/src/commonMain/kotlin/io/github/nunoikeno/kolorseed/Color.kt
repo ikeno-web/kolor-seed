@@ -12,7 +12,7 @@ package io.github.nunoikeno.kolorseed
  * println(color.toHex()) // "#6750A4"
  * ```
  */
-@JvmInline
+@kotlin.jvm.JvmInline
 public value class Color(public val argb: Int) {
 
     /** Red component, 0..255. */
