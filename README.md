@@ -1,7 +1,6 @@
 # kolor-seed
 
-[![CI](https://github.com/nunoikeno/kolor-seed/actions/workflows/ci.yml/badge.svg)](https://github.com/nunoikeno/kolor-seed/actions/workflows/ci.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.nunoikeno/kolor-seed-core)](https://central.sonatype.com/artifact/io.github.nunoikeno/kolor-seed-core)
+[![JitPack](https://jitpack.io/v/ikeno-web/kolor-seed.svg)](https://jitpack.io/#ikeno-web/kolor-seed)
 [![Kotlin](https://img.shields.io/badge/kotlin-2.0-blue.svg?logo=kotlin)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![KMP](https://img.shields.io/badge/KMP-JVM%20%7C%20JS%20%7C%20Native-blueviolet)
@@ -20,14 +19,27 @@ kolor-seed generates complete [Material 3](https://m3.material.io/styles/color/o
 
 ## Installation
 
+Add the JitPack repository to your `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Then add the dependency:
+
 ```kotlin
 // build.gradle.kts
 dependencies {
     // Core: HCT, palettes, schemes (no UI dependency)
-    implementation("io.github.nunoikeno:kolor-seed-core:0.1.0")
+    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-core:v0.1.0")
 
     // Optional: Compose Color extensions
-    implementation("io.github.nunoikeno:kolor-seed-compose:0.1.0")
+    implementation("com.github.ikeno-web.kolor-seed:kolor-seed-compose:v0.1.0")
 }
 ```
 
